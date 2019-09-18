@@ -1,0 +1,12 @@
+
+Sept. 26, 2017
+
+- the serial terminal baud rate in SDK  (and other settings) MUST
+ be set to 115200 or else the ouput will appear garbled
+  in the terminal window.  (I was under the misimpression that
+one may specify any of the available baud rates , but this is
+not the case)..
+
+- update Lab 1 handout to more strongly emphasize this.
+
+

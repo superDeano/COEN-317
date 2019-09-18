@@ -1,0 +1,37 @@
+From: Anthony Fiorito <fioritoanthony@outlook.com>
+To: Tadeusz Obuchowicz <ted.obuchowicz@concordia.ca>
+Subject: COEN 317 Lab 4 Issue
+---------------
+
+Hey Ted,
+
+This is my follow up for the issue I mentioned to you earlier today. I foun=
+d a solution to the problem but it required adding one line of code to your=
+ main.cc file.
+
+For the record the issue I was experiencing was the interrupt handler would=
+ only run the first time the bitstream was loaded onto the xilinx board. Wh=
+en I would run the program two or more times the interrupt handler would ne=
+ver execute after the first run even though the counter was rolling over.
+
+I found this forum post on the Xilinx forum of people having similar issues=
+: https://forums.xilinx.com/t5/Embedded-Processor-System-Design/interrupts-=
+don-t-respond-after-processor-reset/td-p/475480
+
+The solution was to add:
+
+XScuGic_CPUWriteReg(&InterruptController, XSCUGIC_EOI_OFFSET, XPAR_FABRIC_A=
+XI_TIMER_0_INTERRUPT_INTR); after initializing the InterruptController insi=
+de the ScuGicInterrupt_Init function.
+
+It solved my issue and now the interrupt runs everytime I run the program w=
+ithout a problem. If anyone else has this issue you can tell them to add th=
+at line to fix it.
+
+PS. I attached the full source of the main.cc file with the correction.
+
+All the best,
+Anthony Fiorito
+40000808
+
+
