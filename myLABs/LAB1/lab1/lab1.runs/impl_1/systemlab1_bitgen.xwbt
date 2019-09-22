@@ -1,0 +1,8 @@
+INTSTYLE=pa
+INFILE=/nfs/home/d/d_chongs/Documents/COEN317/myLABS/LAB1/lab1/lab1.runs/impl_1/systemlab1_routed.ncd
+OUTFILE=/nfs/home/d/d_chongs/Documents/COEN317/myLABS/LAB1/lab1/lab1.runs/impl_1/systemlab1.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=/nfs/home/d/d_chongs/Documents/COEN317/myLABS/LAB1/lab1/lab1.runs/impl_1
+LICENSE=ISE
+USER_INFO=174208431_175233744_210711282_809

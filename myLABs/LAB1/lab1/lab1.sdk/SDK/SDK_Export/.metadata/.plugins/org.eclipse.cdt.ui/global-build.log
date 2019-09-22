@@ -1,0 +1,119 @@
+12:48:43 **** Build of project hellworldlab1_bsp ****
+make -k all 
+libgen -hw ../systemlab1_hw_platform/system.xml\
+       \
+       -pe ps7_cortexa9_0 \
+       -log libgen.log \
+       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../systemlab1_hw_platform/system.xml -pe ps7_cortexa9_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling standalone
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling canps
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling iicps
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling wdtps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+12:49:13 **** Build of configuration Debug for project hellworldlab1 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../hellworldlab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: hellworldlab1.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../hellworldlab1_bsp/ps7_cortexa9_0/lib -o "hellworldlab1.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: hellworldlab1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hellworldlab1.elf  |tee "hellworldlab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19548	   1096	  29788	  50432	   c500	hellworldlab1.elf
+Finished building: hellworldlab1.elf.size
+ 
+12:53:39 **** Auto Build of configuration Debug for project hellworldlab1 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../hellworldlab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:10:8: error: 'print' was not declared in this scope
+make: *** [src/main.o] Error 1
+12:57:47 **** Incremental Build of configuration Debug for project hellworldlab1 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../hellworldlab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:10:8: error: 'print' was not declared in this scope
+make: *** [src/main.o] Error 1
+12:59:03 **** Auto Build of configuration Debug for project hellworldlab1 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../hellworldlab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: hellworldlab1.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../hellworldlab1_bsp/ps7_cortexa9_0/lib -o "hellworldlab1.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: hellworldlab1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hellworldlab1.elf  |tee "hellworldlab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 467224	   2540	  38848	 508612	  7c2c4	hellworldlab1.elf
+Finished building: hellworldlab1.elf.size
+ 
+12:59:25 **** Incremental Build of configuration Debug for project hellworldlab1 ****
+make all 
+make: Nothing to be done for `all'.
+13:01:36 **** Auto Build of configuration Debug for project hellworldlab1 ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../hellworldlab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: hellworldlab1.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../hellworldlab1_bsp/ps7_cortexa9_0/lib -o "hellworldlab1.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: hellworldlab1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hellworldlab1.elf  |tee "hellworldlab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 467224	   2540	  38848	 508612	  7c2c4	hellworldlab1.elf
+Finished building: hellworldlab1.elf.size
+ 

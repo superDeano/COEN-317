@@ -1,0 +1,8 @@
+12:47:18.379 INFO  - Processing command line option -hwspec /nfs/home/d/d_chongs/Documents/COEN317/myLABS/LAB1/lab1/lab1.sdk/SDK/SDK_Export/hw/systemlab1.xml. 
+12:57:52.448 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:57:52.548 INFO  - PS initialization will be done as it is not done before. 
+12:57:52.549 INFO  - Running PS initialization.... 
+12:57:53.073 INFO  - ps7_init is completed. 
+12:57:53.173 INFO  - PS Initialization is complete. 
+12:59:27.364 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:01:43.549 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

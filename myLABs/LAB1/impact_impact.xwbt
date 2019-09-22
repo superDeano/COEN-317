@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/nfs/home/d/d_chongs/Documents/COEN317/myLABS/LAB1/impact.xsl
+OUTFILE=/nfs/home/d/d_chongs/Documents/COEN317/myLABS/LAB1/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/nfs/home/d/d_chongs/Documents/COEN317/myLABS/LAB1
+LICENSE=iMPACT
+USER_INFO=iMPACT
